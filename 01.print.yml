@@ -1,6 +1,13 @@
-- name: demo my first playbook
+- name: demo my first playbook, play1
   hosts: all
   tasks:
     - name: print hello
       ansible.builtin.debug:
+        msg: hello how are you
+
+- name: demo my first playbook,play2
+  hosts: all
+  tasks:
+    - name: print hello
+      ansible.built.debug:
         msg: hello how are you
